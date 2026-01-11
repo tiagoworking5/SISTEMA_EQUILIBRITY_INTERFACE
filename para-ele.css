@@ -145,36 +145,66 @@ body {
     background-color: #dad4d4;
 }
 
-.produtos-destaque {
-    background-color: #f2f1ef;
-    padding: 60px 40px;
-}
+/* PRODUTOS EM DESTAQUE */
 
-.produtos-destaque h2 {
-    font-size: 22px;
-    font-weight: 700;
-    margin-bottom: 40px;
-    margin-left: 20px;
-}
-
-.produtos-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+.page-container {
     max-width: 1200px;
-
     margin: 0 auto;
+    padding: 32px 40px 0;
 }
 
+/* BOTÃO VOLTAR */
+.btn-voltar {
+    display: inline-block;
+    margin-bottom: 14px;
+    font-size: 13px;
+    color: #B87333;
+    text-decoration: none;
+}
+
+.page-title {
+    margin-bottom: 30px;
+}
+
+.page-title h1 {
+    margin: 0 0 6px 0;
+}
+
+.page-title h4 {
+    margin: 0;
+    font-weight: 600;
+}
+
+.produtos-destaque {
+    background-color: #f2f1ef;      
+    padding: 60px 0;
+
+    width: 100%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+/* CARD INDIVIDUAL */
 .produto-card {
     background-color: #ffffff;
-    border-radius: 8px;
+    border-radius: 12px;
     padding: 30px 20px;
     text-align: center;
 
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
 }
 
+/* EFEITO HOVER */
+.produto-card:hover {
+    transform: translateY(-5px);
+}
+
+/* IMAGEM DO PRODUTO */
 .produto-card img {
     max-width: 180px;
     width: 100%;
@@ -182,18 +212,21 @@ body {
     margin-bottom: 20px;
 }
 
+/* TÍTULO */
 .produto-card h3 {
     font-size: 14px;
     font-weight: 600;
     margin-bottom: 6px;
 }
 
+/* DESCRIÇÃO */
 .produto-card p {
     font-size: 13px;
     color: #555;
     margin-bottom: 20px;
 }
 
+/* BOTÃO */
 .produto-card button {
     background-color: #5f7f4f;
     color: #ffffff;
@@ -202,82 +235,27 @@ body {
     padding: 8px 20px;
     font-size: 13px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.card-destaque {
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
-/* PARTE FINAL E RODAPÉ */
-
-.ritual-section {
-    max-width: 1200px;
-    margin: 40px auto 10px;
-    padding: 0 20px;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-}
-
-.ritual-link img {
-    max-width: 360px;
-    display: block;
-}
-
-.silhueta {
-    display: flex;
-    justify-content: center;
-}
-
-.silhueta img {
-    max-height: 340px;
-}
-
-/* CARDS INFERIORES  */
-.bottom-cards {
-    max-width: 1200px;
-    margin: 30px auto 20px;
-    padding: 0 20px;
-
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 22px;
-}
-
-.bottom-card {
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 8px 18px rgba(0,0,0,0.08);
-    transition: transform 0.3s ease;
-
-    height: 180px;
-    padding: 14px;                 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    overflow: hidden;
-}
-
-.bottom-card:hover {
-    transform: translateY(-4px);
-}
-
-.bottom-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;           
-    object-position: center;      
-    display: block;
+/* HOVER DO BOTÃO */
+.produto-card button:hover {
+    background-color: #4e6a41;
 }
 
 /* FOOTER  */
 .footer {
+    width: 100%;
+    background: #ffffff;
     border-top: 1px solid #e5e5e5;
-    padding: 14px 20px;
-    font-size: 13px;
-    background: #fff;
 }
+
+.footer p {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 30px;
+    font-size: 13px;
+}
+
+
 
