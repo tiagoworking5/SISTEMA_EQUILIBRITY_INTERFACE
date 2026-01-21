@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Equilibrity</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="index.html">
+            <img src="imagens/eqy.png" alt="Equilibrity"></a>
+
+
+    </header>
+
+
+    <section class="quiz-container">
+
+
+        <h2>Seu Perfil</h2>
+
+        <!-- TIPO DE PELE -->
+        <div class="quiz-card">
+            <h3>Tipo de Pele</h3>
+            <label><input type="radio" name="pele"> Oleosa</label>
+            <label><input type="radio" name="pele"> Normal</label>
+            <label><input type="radio" name="pele"> Seca</label>
+            <label><input type="radio" name="pele"> Sensível</label>
+        </div>
+
+        <!-- TIPO DE CABELO -->
+        <div class="quiz-card">
+            <h3>Tipo de Cabelo</h3>
+            <label><input type="radio" name="cabelo"> Liso</label>
+            <label><input type="radio" name="cabelo"> Ondulado</label>
+            <label><input type="radio" name="cabelo"> Cacheado</label>
+            <label><input type="radio" name="cabelo"> Colorido / Tratado</label>
+        </div>
+
+        <!-- TIPO DE BARBA (APENAS PARA ELE) -->
+        <div class="quiz-card" id="barba-section">
+            <h3>Tipo de Barba <span>(opcional)</span></h3>
+            <label><input type="checkbox"> Curta</label>
+            <label><input type="checkbox"> Média</label>
+            <label><input type="checkbox"> Longa</label>
+            <label><input type="checkbox"> Sem barba</label>
+        </div>
+
+        <button class="btn-salvar">Salvar</button>
+
+    </section>
+
+    <script src="quiz.js"></script>
+</body>
+
+</html>
