@@ -1,0 +1,161 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #000;
+}
+
+/* APP */
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #d9d4d4;
+}
+
+/* HEADER */
+.header-ritual {
+    background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 40px;
+}
+
+/* TEXTO ESQUERDO */
+.left-text {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.btn-destaque {
+    margin-top: 12px;
+    padding: 7px 12px;
+    font-size: 11px;
+    background: #c46a2c;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* LOGO */
+.logo-area {
+    text-align: center;
+}
+
+.logo-area img {
+    width: 60px;
+    margin-bottom: 5px;
+}
+
+.logo-area h1 {
+    font-size: 20px;
+}
+
+.logo-area p {
+    font-size: 12px;
+    color: #ccc;
+}
+
+/* CONTEÚDO */
+.ritual-container {
+    flex: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 25px 20px;
+}
+
+/* TÍTULO */
+.ritual-container h2 {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* ETAPAS */
+.etapas {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.etapa {
+    text-align: center;
+    font-size: 13px;
+}
+
+/* PASSOS */
+.passos h3 {
+    margin-bottom: 15px;
+}
+
+/* CARDS */
+.card {
+    display: flex;
+    align-items: center;
+    background: #eeeeee;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 35px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+/* ÍCONES */
+.icone {
+    width: 45px;
+    height: 45px;
+    border: 2px solid #4e8b6f;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    color: #4e8b6f;
+    font-size: 18px;
+}
+
+/* TEXTO */
+.texto h4 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.texto p {
+    font-size: 13px;
+    color: #555;
+}
+
+/* FOOTER */
+.footer {
+    text-align: left;
+    padding: 12px;
+    background: #f3f0f0;
+    color: rgb(8, 8, 8);
+    font-size: 12px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+
+    .header-ritual {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .etapas {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card {
+        padding: 12px;
+    }
+}

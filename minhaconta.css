@@ -106,7 +106,7 @@ body {
 /* INPUT ESTILO GRANDE ARREDONDADO */
 .formulario input {
     padding: 15px;
-    border-radius: 20px;
+    border-radius: 10px;
     border: none;
     background: #eeeeee;
     font-size: 14px;
