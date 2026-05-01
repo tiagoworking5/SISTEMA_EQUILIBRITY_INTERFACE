@@ -16,10 +16,10 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background: #d9d4d4; /* cinza do ritual */
+    background: #d9d4d4;
 }
 
-/* HEADER */
+/* HEADER (igual ritual) */
 .header-ritual {
     background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
     color: white;
@@ -35,7 +35,7 @@ body {
     line-height: 1.5;
 }
 
-/* BOTÃO DESTAQUE (igual ritual) */
+/* BOTÃO DESTAQUE */
 .btn-destaque {
     margin-top: 12px;
     padding: 7px 12px;
@@ -66,51 +66,55 @@ body {
     color: #ccc;
 }
 
-/* CONTEÚDO LOGIN */
-.container-login {
+/* CONTAINER */
+.favoritos-container {
     flex: 1;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
-/* TÍTULO */
-.container-login h2 {
-    margin-bottom: 20px;
-}
-
-/* FORM */
-.formulario {
+/* ÍCONE TOPO */
+.topo-favoritos {
     width: 100%;
-    max-width: 300px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    text-align: right;
+    font-size: 22px;
+    margin-bottom: 15px;
 }
 
-/* INPUT */
-.formulario input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+/* LISTA */
+.lista-favoritos {
+    width: 100%;
+    max-width: 400px;
 }
 
-/* BOTÃO LOGIN */
-.btn-login {
+/* CARDS */
+.card-favorito {
+    width: 100%;
+    height: 120px;
+    background: #eeeeee;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+/* BOTÃO SALVAR */
+.btn-salvar {
     margin-top: 10px;
-    padding: 10px;
-    border: none;
+    padding: 12px 40px;
     background: #c46a2c;
     color: white;
-    border-radius: 8px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
     cursor: pointer;
 }
 
 /* FOOTER */
 .footer {
     background: #ffffff;
-    text-align: center;
+    text-align: left;
     padding: 12px;
     font-size: 12px;
     color: #000;
@@ -123,5 +127,9 @@ body {
         flex-direction: column;
         text-align: center;
         gap: 10px;
+    }
+
+    .card-favorito {
+        height: 100px;
     }
 }

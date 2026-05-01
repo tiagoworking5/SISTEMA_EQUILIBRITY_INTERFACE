@@ -1,0 +1,183 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background: #000;
+}
+
+/* APP */
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #d9d4d4;
+}
+
+/* HEADER */
+.header-ritual {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background: #2a2a2a;
+}
+
+
+/* TEXTO */
+.left-text {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* BOTÃO */
+.btn-destaque {
+    margin-top: 12px;
+    padding: 7px 12px;
+    font-size: 11px;
+    background: #c46a2c;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-karite {
+    padding: 4px 10px;   /*  menor */
+    font-size: 8px;     /*  menor */
+    background: #c46a2c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-karite:visited,
+.btn-karite:active,
+.btn-karite:hover {
+    color: #ffffff;          /*  mantém branco em todos estados */
+    text-decoration: none;   /*  nunca sublinha */
+}
+
+.btn-vegano {
+    padding: 4px 10px;   /*  menor */
+    font-size: 8px;     /*  menor */
+    background: #c46a2c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-vegano:visited,
+.btn-vegano:active,
+.btn-vegano:hover {
+    color: #ffffff;          /*  mantém branco em todos estados */
+    text-decoration: none;   /*  nunca sublinha */
+}
+/*tag a*/
+a {
+    color: #ffffff;          /* texto branco */
+    text-decoration: none;   /* remove sublinhado */
+}
+
+/* LOGO */
+.logo-area {
+    text-align: center;
+}
+
+.logo-area img {
+    width: 60px;
+    margin-bottom: 5px;
+}
+
+/* CONTAINER */
+.blog-container {
+    flex: 1;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* GRID */
+.blog-grid {
+    display: flex;
+    gap: 30px; /* 🔥 espaço entre os cards (colunas) */
+    max-width: 1100px;
+}
+
+/* CARDS PRINCIPAIS */
+.blog-card {
+    background: #eeeeee;
+    padding: 20px;
+    border-radius: 12px;
+    width: 300px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+.blog-card > * {
+    margin-bottom: 12px;
+}
+
+.blog-card > *:last-child {
+    margin-bottom: 0;
+}
+
+/* TÍTULOS */
+.blog-card h2 {
+    margin-bottom: 10px;
+}
+
+/* IMAGENS */
+.blog-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* MINI CARDS */
+.mini-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 10px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.mini-card:last-child {
+    margin-bottom: 0;
+}
+
+.mini-card h3 {
+    font-size: 14px;
+}
+
+.mini-card p {
+    font-size: 12px;
+    color: #555;
+}
+
+/* FOOTER */
+.footer {
+    background: #ffffff;
+    text-align: left;
+    padding: 12px;
+    font-size: 12px;
+    color: #000;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+    .blog-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}

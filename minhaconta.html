@@ -1,78 +1,72 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Equilibrity - Cadastro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Conta - Equilibrity</title>
     <link rel="stylesheet" href="minhaconta.css">
 </head>
 
 <body>
 
-    <!-- CONTAINER PRINCIPAL -->
+<div class="app">
 
+    <!-- HEADER IGUAL AO RITUAL -->
+    <header class="header-ritual">
 
-    <!-- BANNER -->
-    <section class="banner">
-        <div class="banner-conteudo">
-            <div class="banner-texto">
-                <h2>Cuidado Essencial & <br> Inovação</h2>
-                <button>COMECE SEU TESTE EM DESTAQUE</button>
-            </div>
+        <div class="left-text">
+            <p>Cuidado Essencial &</p>
+            <p>Inovação</p>
 
-            <div class="banner-logo">
-                <img src="imagens/logo01.png">
-                <h1>Equilibrity</h1>
-                <p>Seu bem-estar, nosso cuidado</p>
-            </div>
+            <button class="btn-destaque">
+                COMECE SEU TESTE EM DESTAQUE
+            </button>
         </div>
-    </section>
 
-    <!-- ÁREA DE CADASTRO -->
-    <section class="area-form">
+        <div class="logo-area">
+            <img src="imagens/logo01.png" alt="Equilibrity Logo">
+            <h1>Equilibrity</h1>
+            <p>Seu bem-estar, nosso cuidado</p>
+        </div>
 
-        <h2 class="titulo-login">Login</h2>
+    </header>
+
+    <!-- CONTEÚDO -->
+    <main class="container-conta">
+
+        <h2>Minha Conta</h2>
 
         <form class="formulario">
 
-            <label>Escreva o nome:</label>
-            <input type="text" placeholder="">
+            <label>Nome:</label>
+            <input type="text">
 
-            <label>Cep:</label>
-            <input type="text" placeholder="">
+            <label>CEP:</label>
+            <input type="text">
 
             <label>Email:</label>
-            <input type="email" placeholder="">
+            <input type="email">
 
             <label>Senha:</label>
-            <input type="password" placeholder="">
+            <input type="password">
 
             <label>Confirme a senha:</label>
-            <input type="password" placeholder="">
+            <input type="password">
 
             <button type="submit" class="btn-criar">
                 Criar Conta
             </button>
-            <br>
 
         </form>
 
-    </section>
+    </main>
 
-    <!-- RODAPÉ -->
-    <section class="rodape-login">
-        <p>Já tem conta? <a href="login.html">Faça login.</a></p>
-    </section>
+    <!-- FOOTER PADRÃO -->
+    <footer class="footer">
+        <p>© 2026 Equilibrity - Todos os direitos reservados</p>
+    </footer>
 
-    </div>
+</div>
 
 </body>
-
-</html>
-
-<footer class="footer">
-    <p>© 2026 Equilibrity - Todos os direitos reservados</p>
-</footer>
-</body>
-
 </html>
