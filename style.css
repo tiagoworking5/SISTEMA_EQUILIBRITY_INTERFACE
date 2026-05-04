@@ -117,9 +117,9 @@ body {
 
     font-size: 16px;
     font-weight: 600;
-    text-decoration: none;
+    text-decoration: none !important;
 
-    color: #ffffff;
+    color: #ffffff !important;
 
     background: linear-gradient(135deg, #e1a066, #c97a3d,#a45b2a);
 

@@ -19,23 +19,28 @@ body {
     background: #d9d4d4;
 }
 
-/* HEADER */
+/* ========================= */
+/* HEADER RITUAL (PADRÃO) */
+/* ========================= */
+
 .header-ritual {
+    background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+    color: white;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px;
-    background: #2a2a2a;
+
+    padding: 25px 40px;
 }
 
-
-/* TEXTO */
+/* TEXTO ESQUERDA */
 .left-text {
-    font-size: 15px;
+    font-size: 20px;
     line-height: 1.5;
 }
 
-/* BOTÃO */
+/* BOTÃO DESTAQUE */
 .btn-destaque {
     margin-top: 12px;
     padding: 7px 12px;
@@ -47,50 +52,7 @@ body {
     cursor: pointer;
 }
 
-.btn-karite {
-    padding: 4px 10px;   /*  menor */
-    font-size: 8px;     /*  menor */
-    background: #c46a2c;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.btn-karite:visited,
-.btn-karite:active,
-.btn-karite:hover {
-    color: #ffffff;          /*  mantém branco em todos estados */
-    text-decoration: none;   /*  nunca sublinha */
-}
-
-.btn-vegano {
-    padding: 4px 10px;   /*  menor */
-    font-size: 8px;     /*  menor */
-    background: #c46a2c;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.btn-vegano:visited,
-.btn-vegano:active,
-.btn-vegano:hover {
-    color: #ffffff;          /*  mantém branco em todos estados */
-    text-decoration: none;   /*  nunca sublinha */
-}
-/*tag a*/
-a {
-    color: #ffffff;          /* texto branco */
-    text-decoration: none;   /* remove sublinhado */
-}
-
-/* LOGO */
+/* LOGO IGUAL RITUAL */
 .logo-area {
     text-align: center;
 }
@@ -100,84 +62,117 @@ a {
     margin-bottom: 5px;
 }
 
-/* CONTAINER */
+.logo-area h1 {
+    font-size: 20px;
+}
+
+.logo-area p {
+    font-size: 12px;
+    color: #ccc;
+}
+
+/* ========================= */
+/* CONTEÚDO BLOG */
+/* ========================= */
+
 .blog-container {
     flex: 1;
-    padding: 40px 20px;
-    display: flex;
-    justify-content: center;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 40px;
 }
 
-/* GRID */
 .blog-grid {
-    display: flex;
-    gap: 30px; /* 🔥 espaço entre os cards (colunas) */
-    max-width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
 }
 
-/* CARDS PRINCIPAIS */
+/* CARD */
 .blog-card {
-    background: #eeeeee;
+    background: #f2f1ef;
+    border-radius: 16px;
     padding: 20px;
-    border-radius: 12px;
-    width: 300px;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
 }
 
-.blog-card > * {
-    margin-bottom: 12px;
-}
-
-.blog-card > *:last-child {
-    margin-bottom: 0;
-}
-
-/* TÍTULOS */
-.blog-card h2 {
-    margin-bottom: 10px;
-}
-
-/* IMAGENS */
 .blog-card img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 12px;
 }
 
-/* MINI CARDS */
-.mini-card {
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 10px; 
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+/* ========================= */
+/* 🔥 BOTÕES CORRIGIDOS */
+/* ========================= */
+
+/* REMOVE QUALQUER ESTILO DO BUTTON (caso ainda exista) */
+.blog-card button {
+    background: none;
+    border: none;
+    padding: 0;
 }
 
-.mini-card:last-child {
-    margin-bottom: 0;
+/* BOTÕES (links estilizados) */
+.blog-card a {
+    display: inline-block;
+    text-decoration: none !important;
+
+    background: #c46a2c;
+    color: #ffffff !important;
+
+    padding: 8px 16px;
+    font-size: 13px;
+
+    border-radius: 5px;
+    border: none;
+
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
-.mini-card h3 {
-    font-size: 14px;
+/* NÃO MUDA NO HOVER */
+.blog-card a:hover,
+.blog-card a:visited,
+.blog-card a:active {
+    background: #c46a2c;
+    color: #ffffff;
 }
 
-.mini-card p {
-    font-size: 12px;
-    color: #555;
-}
-
+/* ========================= */
 /* FOOTER */
+/* ========================= */
+
 .footer {
     background: #ffffff;
-    text-align: left;
-    padding: 12px;
+    padding: 15px;
     font-size: 12px;
     color: #000;
 }
 
+/* ========================= */
 /* RESPONSIVO */
+/* ========================= */
+
 @media (max-width: 900px) {
     .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .header-ritual {
         flex-direction: column;
-        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .logo-area {
+        text-align: center;
     }
 }

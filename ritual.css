@@ -18,7 +18,79 @@ body {
     background: #d9d4d4;
 }
 
-/* HEADER */
+/* ========================= */
+/* HEADER PADRÃO */
+/* ========================= */
+
+.header {
+    width: 100%;
+    height: 96px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* CONTAINER */
+.header-container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 32px;
+
+    display: flex;
+    align-items: center;
+}
+
+/* LOGO */
+.logo img {
+    height: 64px;
+}
+
+/* MENU CENTRALIZADO */
+.nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+}
+
+.nav ul li a {
+    color: #1a1a1a; 
+}
+
+.nav ul li a[href="ritual.html"] 
+{
+    color: #c46a2c; 
+    font-weight: bold;
+}
+
+/* ICONES */
+.menu-icons {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+
+    margin-left: auto; 
+}
+
+.menu-icons img {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+/* ========================= */
+/* HEADER RITUAL  */
+/* ========================= */
+
 .header-ritual {
     background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
     color: white;
@@ -45,7 +117,7 @@ body {
     cursor: pointer;
 }
 
-/* LOGO */
+/* LOGO RITUAL */
 .logo-area {
     text-align: center;
 }
@@ -157,5 +229,21 @@ body {
 
     .card {
         padding: 12px;
+    }
+
+    /* MENU volta ao fluxo normal no mobile */
+    .nav {
+        position: static;
+        transform: none;
+        margin-top: 10px;
+    }
+
+    .header-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu-icons {
+        margin-left: 0;
     }
 }
