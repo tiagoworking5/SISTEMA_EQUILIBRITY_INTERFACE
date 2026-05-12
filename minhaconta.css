@@ -68,6 +68,12 @@ body {
     font-weight: normal;
 }
 
+.nav ul li a[href="minhaconta.html"] 
+{
+    color: #c46a2c; 
+    font-weight: bold;
+}
+
 /* ICONES */
 .menu-icons {
     display: flex;
